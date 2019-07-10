@@ -1,0 +1,329 @@
+body {
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto Condensed", Arial;
+}
+
+.zone {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+        inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+        inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+        inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+        inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+/*COVER*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.cover {
+    width: 20rem;
+}
+
+/*GRID*/
+.grid-wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.box > img {
+    width: 50%;
+}
+
+.box > text {
+    text-align: center;
+}
+
+.box {
+    padding: 60px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+.admin-user {
+    justify-content: center;
+    align-items: center;
+}
+.admin-user > img {
+    width: 10%;
+}
+
+.menu-title {
+    font-family: "Roboto Condensed", Arial;
+    font-size: 3vh;
+    text-align: center;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green {
+    background: #56b870; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        #56b870 0%,
+        #a5c956 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #56b870),
+        color-stop(100%, #a5c956)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        #56b870 0%,
+        #a5c956 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #56b870 0%,
+        #a5c956 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56b870 0%, #a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56b870 0%, #a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red {
+    background: #c655be; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        #c655be 0%,
+        #cf0404 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #c655be),
+        color-stop(100%, #cf0404)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        #c655be 0%,
+        #cf0404 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #c655be 0%,
+        #cf0404 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #c655be 0%, #cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #c655be 0%, #cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow {
+    background: #f3aaaa; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        #f3aaaa 0%,
+        #febf04 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #f3aaaa),
+        color-stop(100%, #febf04)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        #f3aaaa 0%,
+        #febf04 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #f3aaaa 0%,
+        #febf04 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f3aaaa 0%, #febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #f3aaaa 0%, #febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue {
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(
+        top,
+        #7abcff 0%,
+        #60abf8 44%,
+        #4096ee 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #7abcff),
+        color-stop(44%, #60abf8),
+        color-stop(100%, #4096ee)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        #7abcff 0%,
+        #60abf8 44%,
+        #4096ee 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #7abcff 0%,
+        #60abf8 44%,
+        #4096ee 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+        top,
+        #7abcff 0%,
+        #60abf8 44%,
+        #4096ee 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+        top,
+        #7abcff 0%,
+        #60abf8 44%,
+        #4096ee 100%
+    ); /* W3C */
+}
+
+.grey {
+    background: #ffffff;
+    background: -moz-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 44%,
+        #a1a1a1 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0%, #ffffff),
+        color-stop(44%, #ebebeb),
+        color-stop(100%, #a1a1a1)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 44%,
+        #a1a1a1 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 44%,
+        #a1a1a1 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 44%,
+        #a1a1a1 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+        top,
+        #ffffff 0%,
+        #ebebeb 44%,
+        #a1a1a1 100%
+    ); /* W3C */
+}
+
+/*LOGIN*/
+.bg {
+    background-image: url(/images/login-bg.jpg);
+}
+.login-right {
+    position: inherit;
+    overflow: auto;
+    margin-right: 0;
+    background-size: auto;
+    -webkit-background-size: cover;
+    background-color: rgba(255, 255, 255, 0.57);
+    background-blend-mode: overlay;
+}
+
+.image-center-login {
+    display: block;
+    margin: auto;
+    /*vertical-align: middle;*/
+    border: 0;
+}
+.login-title {
+    margin-top: 10px;
+    font-family: "Roboto Condensed", Arial;
+    text-align: center;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
+}
+.card-block {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+    border-radius: 2px;
+    margin-bottom: 0.5rem;
+    border-color: transparent;
+    background: #fff;
+    padding: 1.25rem;
+    border: 1px solid #e5e5e5;
+}
+.btn-login {
+    background-color: #630f0f !important;
+    color: white !important;
+    border-color: #fffbfb00;
+}
+.btn-login:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #400b0b !important;
+}

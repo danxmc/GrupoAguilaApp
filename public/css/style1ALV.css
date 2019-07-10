@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  table-layout: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+table {
+  border-collapse: collapse;
+  background: white;
+  table-layout: fixed;
+  width: 100%;
+}
+th, td {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    
+ 
+}
+tr td:nth-child(1){
+    
+  background: -webkit-linear-gradient(#777cff, #70c9d1);
+  -webkit-background-clip: text;
+    font-size: 17px;
+   
+  -webkit-text-fill-color: transparent;
+}
+.pane {
+  background: #eee;
+}
+.pane-hScroll {
+  overflow: auto;
+  width: 400px;
+  background: green;
+}
+.pane-vScroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 200px;
+  background: red;
+}
+
+
+::-webkit-scrollbar {
+    width: 16px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+     background-color: #DCDCDC;
+}
+
+.pane--table4 {
+  width: 900px;
+  overflow-x: scroll;
+    transform: translate(24%, 0%);
+
+}
+.pane--table4 th, .pane--table4 td {
+  width: auto;
+  min-width: 160px;
+      font-family: "Times New Roman", Times, serif;
+    text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  
+    
+font-family: 'Roboto', sans-serif;
+      text-align: center;
+}
+.pane--table4 tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+    height:300px;
+
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(1,1,1,0.3);
+    table-layout: fixed;
+  
+background: white;
+    
+}
+.pane--table4 thead {
+    color: white;
+    display: table-row;
+    background: -webkit-linear-gradient(left, #777cff, #70c9d1);
+  background: linear-gradient(to right, #777cff, #70c9d1);
+    table-layout: fixed;
+    text-transform: uppercase;
+     text-align: center;
+}
+
+.pane--table3 {
+  width: 900px;
+  overflow-x: scroll;
+    transform: translate(24%, 0%);
+
+}
+.pane--table3 th, .pane--table3 td {
+  width: auto;
+  min-width: 160px;
+      font-family: "Times New Roman", Times, serif;
+    text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  
+    
+font-family: 'Roboto', sans-serif;
+      text-align: center;
+}
+.pane--table3 tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+    height:300px;
+
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(1,1,1,0.3);
+    table-layout: fixed;
+  
+background: white;
+    
+}
+.pane--table3 thead {
+    color: white;
+    display: table-row;
+    background: -webkit-linear-gradient(left, #777cff, #70c9d1);
+  background: linear-gradient(to right, #777cff, #70c9d1);
+    table-layout: fixed;
+    text-transform: uppercase;
+     text-align: center;
+}
+
+.pane--table2 {
+  width: 900px;
+  overflow-x: scroll;
+    transform: translate(24%, 0%);
+
+}
+.pane--table2 th, .pane--table2 td {
+  width: auto;
+  min-width: 160px;
+      font-family: "Times New Roman", Times, serif;
+    text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  
+    
+font-family: 'Roboto', sans-serif;
+      text-align: center;
+}
+.pane--table2 tbody {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+    height:300px;
+
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(1,1,1,0.3);
+    table-layout: fixed;
+  
+background: white;
+    
+}
+.pane--table2 thead {
+    color: white;
+    display: table-row;
+    background: -webkit-linear-gradient(left, #777cff, #70c9d1);
+  background: linear-gradient(to right, #777cff, #70c9d1);
+    table-layout: fixed;
+    text-transform: uppercase;
+     text-align: center;
+}
+
+
+h3 {
+  font-family:'Fjalla One', sans-serif;
+  font-size:2.5em;
+   text-align: center;
+  color:#0638A2;
+ 
+  letter-spacing: 1px;
+  font-weight: 50;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#777cff, #70c9d1);
+  -webkit-background-clip: text;
+    
+   
+  -webkit-text-fill-color: transparent;
+  display:inline;
+ 
+    
+}
