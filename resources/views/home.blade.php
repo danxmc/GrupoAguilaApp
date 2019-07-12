@@ -6,7 +6,7 @@
 </div>
 
 <div class="grid-wrapper animated bounceInRight">
-    <a href="" style="text-decoration: none;">
+    <a href="/aseguradoras" style="text-decoration: none;">
         <div class="box zone red">
             <img src="/images/box.svg">
             <span class="menu-title">CATÁLOGOS</span>

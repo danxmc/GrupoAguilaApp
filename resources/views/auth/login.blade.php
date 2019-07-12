@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg">
+<div>
 	<div class="col-sm-12 login-right">
         <div class="login-form">
             <form class="ff" data-toggle="validator" method="POST" action="{{ route('login') }}">
