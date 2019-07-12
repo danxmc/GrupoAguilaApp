@@ -24,6 +24,7 @@ class CreateEquiposTable extends Migration
             $table->string('Imgn')->nullable();
             $table->string('Tipo_Motor');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

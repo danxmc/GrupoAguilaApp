@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Equipo;
+use Maatwebsite\Excel\Facades\Excel;
 
 class EquiposController extends Controller
 {
@@ -133,10 +134,17 @@ class EquiposController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy( $id)
+
+    public function destroy($id)
     {
-        $Equipo = Equipo::find($id);
-        return (dd($Equipo));
+        $Equipo = Equipo::find($id)->delete();
+        return redirect('/equipos');
+        
+    }
+    //export excel
+    public function export()
+    {
+        return Excel::download(new EquiposExport(), filename:'equipos.xlsx');
         
     }
 }

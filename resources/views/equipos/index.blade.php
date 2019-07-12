@@ -26,7 +26,7 @@
 
     <a class="navbar-brand" href="#"> </a>
     <!---------EXCEL--------->
-    <button name="excel" type="button" class="btn btn-outline-secondary"><img
+    <button formaction="{{ url('downloadExcel/xlsx') }}" name="excel" type="submit" class="btn btn-outline-secondary"><img
             src="https://i.ibb.co/2kF7NQf/file-times.png"></button>
 
     <a class="navbar-brand" href="#"> </a>
@@ -226,14 +226,12 @@
                     <td>
                         <!---------ELIMINAR--------->
                         <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
-                            data-target="#Eliminar">
+                            data-target="#Eliminar{{$Equipo->id}}">
                             <img src="https://i.ibb.co/MVb6p82/trash-alt.png">
                         </button>
 
-<form method='POST' action="{{route('equipo.delete', $Equipo->id)}}">
-                                            @method('DELETE')
-                                            {{csrf_field()}}
-                        <div class="modal fade" id="Eliminar" tabindex="-1" role="dialog"
+
+                        <div class="modal fade" id="Eliminar{{$Equipo->id}}" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-cente red" role="document">
                                 <div class="modal-content">
@@ -244,6 +242,9 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
+                                        <form method='POST' action="{{ url('equipos', [$Equipo->id]) }}">
+                                            @method('DELETE')
+                                            {{csrf_field()}}
                                             <div class="form-group">
                                                 <label for="nombre-usuario">Se perderá el registro permanente una vez
                                                     eliminando el Equipo
